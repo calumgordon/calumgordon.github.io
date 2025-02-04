@@ -11,14 +11,27 @@
             padding: 0;
             text-align: center;
             background: url('quasars.png') no-repeat center center/cover;
-            height: 100vh;
+            height: 50vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
         }
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
         header {
             color: white;
-            padding: 20px;
+            padding: 60px 20px 20px;
             font-size: 24px;
         }
         section {
@@ -38,6 +51,12 @@
     </style>
 </head>
 <body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Research</a>
+        <a href="#">Interests</a>
+        <a href="#">Contact</a>
+    </nav>
     <header>Welcome to My Website</header>
     <section>
         <h2>About Me</h2>
