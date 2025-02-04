@@ -43,8 +43,19 @@
             padding: 10px 20px;
             border-radius: 5px;
         }
-        section {
+        .text-background {
+            width: 60%; /* Same width as image */
+            height: 50vh; /* Half of the page height */
+            background-color: lightblue;
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+        }
+        .text-content {
             padding: 20px;
+            font-size: 18px;
         }
         footer {
             background-color: #333;
@@ -66,10 +77,12 @@
     <div class="image-container">
         <h1>Calum Gordon</h1>
     </div>
-    <section>
-        <h2>About Me</h2>
-        <p>I'm a cosmology PhD student at IFAE Barcelona.</p>
-    </section>
-    <footer>Copyright &copy; 2025 My Website</footer>
+    <div class="text-background">
+        <div class="text-content">
+            <h2>Calum Gordon</h2>
+            <p>I'm a cosmology PhD student at IFAE, Barcelona..</p>
+        </div>
+    </div>
+    <!-- <footer>Copyright &copy; 2025 My Website</footer> -->
 </body>
 </html>
