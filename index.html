@@ -3,18 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calum Gordon</title>
+    <title>My Website</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             text-align: center;
-            background: url('quasars.png') no-repeat center center/cover;
-            height: 50vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            background-color: white;
         }
         nav {
             background-color: rgba(0, 0, 0, 0.7);
@@ -29,16 +25,26 @@
             margin: 0 15px;
             font-size: 18px;
         }
-        header {
+        .image-container {
+            width: 60%; /* 3/5 of the page width */
+            height: 20vh; /* 1/5 of the page height */
+            border: 3px solid black;
+            margin: 100px auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url('quasars.png') no-repeat center center/cover;
+            position: relative;
+        }
+        .image-container h1 {
             color: white;
-            padding: 60px 20px 20px;
             font-size: 24px;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px 20px;
+            border-radius: 5px;
         }
         section {
             padding: 20px;
-            background: rgba(255, 255, 255, 0.8);
-            margin: auto;
-            border-radius: 10px;
         }
         footer {
             background-color: #333;
@@ -57,10 +63,12 @@
         <a href="/interests/">Interests</a>
         <a href="/contact/">Contact</a>
     </nav>
-    <header>Welcome to My Website</header>
+    <div class="image-container">
+        <h1>Calum Gordon</h1>
+    </div>
     <section>
-        <h2>Calum Gordon</h2>
-        <p>This is a website to showcase my work and interests.</p>
+        <h2>About Me</h2>
+        <p>I'm a cosmology PhD student at IFAE Barcelona.</p>
     </section>
     <footer>Copyright &copy; 2025 My Website</footer>
 </body>
